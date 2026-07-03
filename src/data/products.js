@@ -1,4 +1,4 @@
-import heroImg from "../assets/furniro-hero.png";
+import { images } from "./images.js";
 
 export const products = [
   {
@@ -8,7 +8,7 @@ export const products = [
     price: "Rp 2.500.000",
     oldPrice: "Rp 3.500.000",
     badge: "-30%",
-    image: heroImg,
+    image: images.products.syltherine,
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const products = [
     price: "Rp 2.500.000",
     oldPrice: "",
     badge: "",
-    image: heroImg,
+    image: images.products.leviosa,
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ export const products = [
     price: "Rp 7.000.000",
     oldPrice: "Rp 14.000.000",
     badge: "-50%",
-    image: heroImg,
+    image: images.products.lolito,
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ export const products = [
     price: "Rp 500.000",
     oldPrice: "",
     badge: "New",
-    image: heroImg,
+    image: images.products.respira,
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ export const products = [
     price: "Rp 1.500.000",
     oldPrice: "",
     badge: "",
-    image: heroImg,
+    image: images.products.grifo,
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ export const products = [
     price: "Rp 150.000",
     oldPrice: "",
     badge: "New",
-    image: heroImg,
+    image: images.products.muggo,
   },
   {
     id: 7,
@@ -62,7 +62,7 @@ export const products = [
     price: "Rp 7.000.000",
     oldPrice: "Rp 14.000.000",
     badge: "-50%",
-    image: heroImg,
+    image: images.products.pingky,
   },
   {
     id: 8,
@@ -71,6 +71,6 @@ export const products = [
     price: "Rp 500.000",
     oldPrice: "",
     badge: "New",
-    image: heroImg,
+    image: images.products.potty,
   },
 ];

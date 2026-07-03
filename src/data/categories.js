@@ -1,24 +1,24 @@
-import heroImg from "../assets/furniro-hero.png";
+import { images } from "./images.js";
 
 export const categories = [
   {
     id: 1,
     name: "Dining",
-    image: heroImg,
+    image: images.categories.dining,
     alt: "Dining room furniture",
     href: "/shop?category=dining",
   },
   {
     id: 2,
     name: "Living",
-    image: heroImg,
+    image: images.categories.living,
     alt: "Living room furniture",
     href: "/shop?category=living",
   },
   {
     id: 3,
     name: "Bedroom",
-    image: heroImg,
+    image: images.categories.bedroom,
     alt: "Bedroom furniture",
     href: "/shop?category=bedroom",
   },

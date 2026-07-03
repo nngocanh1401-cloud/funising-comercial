@@ -1,42 +1,28 @@
-import heroImg from "../../assets/furniro-hero.png";
-import Container from "../../components/Container.jsx";
+import { images } from "../../data/images.js";
 
 export default function InteriorGallery() {
-  const galleryImages = [
-    heroImg,
-    heroImg,
-    heroImg,
-    heroImg,
-    heroImg,
-    heroImg,
-    heroImg,
-    heroImg,
-  ];
-
   return (
-    <section className="overflow-hidden py-14">
+    <section className="bg-white px-5 pb-[50px] pt-[67px]">
       <div className="text-center">
-        <p className="font-['Poppins'] text-[20px] font-semibold text-[#616161]">
+        <p className="font-['Poppins'] text-[20px] font-semibold leading-[30px] text-[#616161]">
           Share your setup with
         </p>
 
-        <h2 className="font-['Poppins'] text-[32px] font-bold text-[#3A3A3A] md:text-[40px]">
+        <h2 className="font-['Poppins'] text-[clamp(32px,4vw,40px)] font-bold leading-[1.2] text-[#3A3A3A]">
           #FurniroFurniture
         </h2>
       </div>
 
-      <Container className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {galleryImages.map((image, index) => (
+      <div className="mx-auto mt-8 grid max-w-[1240px] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {images.gallery.map((image, index) => (
           <img
-            key={index}
+            key={`${image}-${index}`}
             src={image}
             alt={`Furniro furniture setup ${index + 1}`}
-            className={`w-full object-cover ${
-              index % 3 === 0 ? "h-[320px]" : "h-[240px]"
-            }`}
+            className="h-[260px] w-full rounded-[4px] object-cover md:h-[300px]"
           />
         ))}
-      </Container>
+      </div>
     </section>
   );
 }
