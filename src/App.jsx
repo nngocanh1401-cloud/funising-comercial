@@ -1,38 +1,14 @@
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
-import Home from "./pages/Home.jsx";
-
-export default function App() {
+function App() {
   return (
-    <>
-      <Header />
-
-      <main>
-        <Home />
-      </main>
-
-      <Footer />
-    </>
-  );
+    <main className="min-h-screen flex items-center justify-center bg-[#F9F1E7]">
+      <h1 className="text-5xl font-bold text-[#B88E2F]">
+        Furniture Store
+      </h1>
+    </main>
+  )
 }
 
-
-
-
-
-
-
-// function App() {
-//   return (
-//     <main className="min-h-screen flex items-center justify-center bg-[#F9F1E7]">
-//       <h1 className="text-5xl font-bold text-[#B88E2F]">
-//         Furniture Store
-//       </h1>
-//     </main>
-//   )
-// }
-
-// export default App
+export default App
 
 
 

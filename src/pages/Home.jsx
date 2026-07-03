@@ -1,18 +1,9 @@
-import HeroBanner from "../sections/home/HeroBanner.jsx";
-import CategorySection from "../sections/home/CategorySection.jsx";
-import ProductGrid from "../components/ProductGrid.jsx";
-import InspirationSection from "../sections/home/InspirationSection.jsx";
-import InteriorGallery from "../sections/home/InteriorGallery.jsx";
-import { products } from "../data/products.js";
+import React from 'react'
 
-export default function Home() {
+const Home = () => {
   return (
-    <>
-      <HeroBanner />
-      <CategorySection />
-      <ProductGrid title="Our Products" products={products.slice(0, 8)} />
-      <InspirationSection />
-      <InteriorGallery />
-    </>
-  );
+    <div>Home</div>
+  )
 }
+
+export default Home
